@@ -48,7 +48,7 @@
       <Project>{d44f733f-3c38-4a7c-851f-64a8d7e7d050}</Project>
       <Name>HoundRace.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\HoundRace.XMLParser\HoundRace.Parsers.csproj">
+    <ProjectReference Include="..\HoundRace.Parsers\HoundRace.Parsers.csproj">
       <Project>{42be10e5-470f-4314-907d-02ce361e25d8}</Project>
       <Name>HoundRace.Parsers</Name>
     </ProjectReference>

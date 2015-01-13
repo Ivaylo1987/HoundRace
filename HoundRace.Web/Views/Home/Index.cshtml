@@ -26,15 +26,6 @@
 
 @section scripts
 {
-    <script>
-        (function poll() {
-            setTimeout(function () {
-                $(".refresh").click();
-                console.log("Clicked!")
-                poll();
-            }, 2000);
-        })();
-    </script>
+    <script src="~/Scripts/ajaxPolling.js"></script>
 }
-
 </div>

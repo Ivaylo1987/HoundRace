@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Web", "HoundRace.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Models", "HoundRace.Models\HoundRace.Models.csproj", "{D44F733F-3C38-4A7C-851F-64A8D7E7D050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Parsers", "HoundRace.XMLParser\HoundRace.Parsers.csproj", "{42BE10E5-470F-4314-907D-02CE361E25D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Parsers", "HoundRace.Parsers\HoundRace.Parsers.csproj", "{42BE10E5-470F-4314-907D-02CE361E25D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Services", "HoundRace.Services\HoundRace.Services.csproj", "{B245C0DE-8D20-4CFA-8BF3-9DA6C2A2F9CF}"
 EndProject
