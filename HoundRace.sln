@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Web", "HoundRace.Web\HoundRace.Web.csproj", "{DCE9343B-4895-40F3-9DEF-78CB737B4AE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Models", "HoundRace.Models\HoundRace.Models.csproj", "{D44F733F-3C38-4A7C-851F-64A8D7E7D050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Parsers", "HoundRace.XMLParser\HoundRace.Parsers.csproj", "{42BE10E5-470F-4314-907D-02CE361E25D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoundRace.Services", "HoundRace.Services\HoundRace.Services.csproj", "{B245C0DE-8D20-4CFA-8BF3-9DA6C2A2F9CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE9343B-4895-40F3-9DEF-78CB737B4AE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE9343B-4895-40F3-9DEF-78CB737B4AE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE9343B-4895-40F3-9DEF-78CB737B4AE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE9343B-4895-40F3-9DEF-78CB737B4AE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D44F733F-3C38-4A7C-851F-64A8D7E7D050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44F733F-3C38-4A7C-851F-64A8D7E7D050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44F733F-3C38-4A7C-851F-64A8D7E7D050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44F733F-3C38-4A7C-851F-64A8D7E7D050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BE10E5-470F-4314-907D-02CE361E25D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BE10E5-470F-4314-907D-02CE361E25D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BE10E5-470F-4314-907D-02CE361E25D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BE10E5-470F-4314-907D-02CE361E25D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B245C0DE-8D20-4CFA-8BF3-9DA6C2A2F9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B245C0DE-8D20-4CFA-8BF3-9DA6C2A2F9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B245C0DE-8D20-4CFA-8BF3-9DA6C2A2F9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B245C0DE-8D20-4CFA-8BF3-9DA6C2A2F9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
