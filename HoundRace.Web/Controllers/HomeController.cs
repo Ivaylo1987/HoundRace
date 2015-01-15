@@ -38,13 +38,13 @@
             if (Request.QueryString["byName"] != null)
             {
                 var nameValue = Request.QueryString["byName"];
-                raceEvent = this.OrderByValue(e => e.Name, nameValue, raceEvent);
+                raceEvent = this.OrderEntiesByPropertyValue(e => e.Name, nameValue, raceEvent);
             }
 
             if (Request.QueryString["byOdds"] != null)
             {
                 var oddsValue = Request.QueryString["byOdds"];
-                raceEvent = this.OrderByValue(e => e.OddsDecimal, oddsValue, raceEvent);
+                raceEvent = this.OrderEntiesByPropertyValue(e => e.OddsDecimal, oddsValue, raceEvent);
             }
 
             return this.PartialView("RaceEventPartial", raceEvent);
@@ -63,7 +63,7 @@
             return raceEvents;
         }
 
-        private RaceEventViewModel OrderByValue<T>(Func<EntryViewModel, T> orderExpression, string value, RaceEventViewModel raceEvent)
+        private RaceEventViewModel OrderEntiesByPropertyValue<T>(Func<EntryViewModel, T> orderExpression, string value, RaceEventViewModel raceEvent)
         {
             if (value == "Ascending")
             {
