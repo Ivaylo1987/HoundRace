@@ -2,31 +2,42 @@
 @model IEnumerable<RaceEventViewModel>
 
 <div class="jumbotron">
-    <h2>Welcome to Greyhound Racing</h2>
+    <h1>Welcome to Greyhound Racing</h1>
+    <br />
     @{
         var idCounter = 0;
         foreach (var raceEvent in Model)
         {
-            var id = "raceContainer" + @idCounter;
-            <div class="row" id="@id">
-                @Html.Partial("RaceEventPartial", raceEvent)
-            </div>
+            var raceId = "raceContainer" + @idCounter;
+            <div class="row" id=@("raceUnit" + idCounter)>
 
-            <div class="row">
-                @Ajax.ActionLink("Refresh this race", "RefreshRaceEvents", "Home", new { EventNumber = raceEvent.EventNumber },
+                <div class="row">
+                    Sort By Name:
+                    <input type="button" name="byName" value="Ascending" class="btn btn-primary btn-sort" />
+                    Sort By Odds:
+                    <input type="button" name="byOdds" value="Ascending" class="btn btn-primary btn-sort" />
+
+                    @Ajax.ActionLink("Refresh this race", "RefreshRaceEvents", "Home", new { EventNumber = raceEvent.EventNumber },
                               new AjaxOptions
                               {
-                                  UpdateTargetId = @id,
+                                  UpdateTargetId = @raceId,
                                   HttpMethod = "GET",
                                   InsertionMode = InsertionMode.Replace,
-                              }, new { @class = "btn btn-primary refresh", })
+                              }, new { @class = "btn btn-primary refresh pull-right"})
+                </div>
+
+                <div class="row" id="@raceId">
+                    @Html.Partial("RaceEventPartial", raceEvent)
+                </div>
+
             </div>
+            <br />
             idCounter++;
         }
     }
 
+</div>
 @section scripts
 {
     <script src="~/Scripts/ajaxPolling.js"></script>
 }
-</div>
