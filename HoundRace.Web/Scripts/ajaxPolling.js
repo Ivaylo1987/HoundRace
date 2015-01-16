@@ -21,8 +21,6 @@
             refreshLink = refreshLink.split("&")[0];
             refreshLink += "&" + filterBtn.attr("name") + "=" + filerValue;
             refreshBtn.attr("href", refreshLink);
-
-            
         })
     })();
 
