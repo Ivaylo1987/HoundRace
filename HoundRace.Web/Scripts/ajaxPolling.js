@@ -1,5 +1,4 @@
 ﻿(function () {
-
     (function changeSortingParams() {
         $(".btn-sort").on("click", function () {
             var filterBtn = $(this);
