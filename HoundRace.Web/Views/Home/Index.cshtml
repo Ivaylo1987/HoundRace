@@ -13,7 +13,7 @@
 
                 <div class="row">
                     Sort By Name:
-                    <input type="button" name="byName" value="Ascending" class="btn btn-success btn-sort" />
+                    <input type="button" name="byName" value="Ascending" class="btn btn-info btn-sort" />
                     Sort By Odds:
                     <input type="button" name="byOdds" value="Ascending" class="btn btn-success btn-sort" />
 
@@ -23,7 +23,7 @@
                                   UpdateTargetId = @raceId,
                                   HttpMethod = "GET",
                                   InsertionMode = InsertionMode.Replace,
-                              }, new { @class = "btn btn-info refresh pull-right"})
+                              }, new { @class = "btn btn-default refresh pull-right"})
                 </div>
 
                 <div class="row" id="@raceId">
