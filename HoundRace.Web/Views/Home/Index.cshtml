@@ -13,9 +13,9 @@
 
                 <div class="row">
                     Sort By Name:
-                    <input type="button" name="byName" value="Ascending" class="btn btn-primary btn-sort" />
+                    <input type="button" name="byName" value="Ascending" class="btn btn-success btn-sort" />
                     Sort By Odds:
-                    <input type="button" name="byOdds" value="Ascending" class="btn btn-primary btn-sort" />
+                    <input type="button" name="byOdds" value="Ascending" class="btn btn-success btn-sort" />
 
                     @Ajax.ActionLink("Refresh this race", "RefreshRaceEvents", "Home", new { EventNumber = raceEvent.EventNumber },
                               new AjaxOptions
@@ -23,7 +23,7 @@
                                   UpdateTargetId = @raceId,
                                   HttpMethod = "GET",
                                   InsertionMode = InsertionMode.Replace,
-                              }, new { @class = "btn btn-primary refresh pull-right"})
+                              }, new { @class = "btn btn-info refresh pull-right"})
                 </div>
 
                 <div class="row" id="@raceId">
